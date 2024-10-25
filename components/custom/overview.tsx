@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
+import {Counter} from "@friendlyface/react"
 
 import { LogoOpenAI, MessageIcon, VercelIcon } from "./icons";
 
@@ -35,10 +36,13 @@ export const Overview = () => {
             href="https://sdk.vercel.ai/docs"
             target="_blank"
           >
-            Docs
+            Docss
           </Link>
           .
         </p>
+        <Counter initialValue={12}/>
+        
+        
       </div>
     </motion.div>
   );

@@ -7,7 +7,8 @@ import { ReactNode } from "react";
 import { BotIcon, UserIcon } from "./icons";
 import { Markdown } from "./markdown";
 import { PreviewAttachment } from "./preview-attachment";
-import { Weather } from "./weather";
+//import { Weather } from "./weather";
+import {Counter, Weather} from "@friendlyface/react"
 
 export const Message = ({
   role,
@@ -20,6 +21,9 @@ export const Message = ({
   toolInvocations: Array<ToolInvocation> | undefined;
   attachments?: Array<Attachment>;
 }) => {
+
+  console.log("toolInvocations:",toolInvocations);
+
   return (
     <motion.div
       className={`flex flex-row gap-4 px-4 w-full md:w-[500px] md:px-0 first-of-type:pt-20`}
